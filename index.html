@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCV</title>
+
+    <!----links---->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel= "stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d8d8b2a156.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <!----Navbar---->
+        <img src="Images/Graves1.png" class="logo">
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#resume">Resume</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+
+    </header>
+     
+    <!----Home page---->
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <h3>Hi! It's Me</h3>
+            <h1>Danté Graves!</h1>
+            <h3>And I'm a Junior  <span class="text"></span></h3>
+
+            <!----Linked accounts---->
+            <div class="home-sci">
+                <a href="https://www.linkedin.com/in/dant%C3%A9-graves-432062310/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/DanteGraves"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/0631031169"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+            <!----Buttons---->
+            <a href="#resume" class="btn-box">More About Me</a>
+            
+        </div>
+
+    </section>
+
+    <!----Resume page---->
+    <section class="about" id="resume">
+
+        <div class="about-img">
+            <img src="Images/newHeadshot.jpg" alt="">
+        </div>
+
+        <div class="about-text">
+
+            <h2>About <span>Me</span></h2>
+
+            <p>As a fast learner and highly motivated individual, I am excited to embark on a new chapter in my professional journey. 
+                My diverse experiences have honed my adaptability, problem-solving skills, and dedication, 
+                preparing me well to tackle new challenges and seize opportunities. I am committed to continuous learning and personal growth, 
+                which fuels my enthusiasm for exploring innovative solutions and enhancing my skillset.
+
+                My adaptability allows me to thrive in dynamic, fast-paced environments, while my problem-solving abilities enable me to 
+                address complex issues with creativity and efficiency. I am dedicated to delivering high-quality work and take pride in my 
+                attention to detail and strong work ethic. As a passionate and driven junior professional, I am ready to contribute meaningfully 
+                to any team. </p>
+                
+                <!----More button---->
+                <a href="#" id="more-about-me-btn" class="btn-box">More About Me</a>
+                <a href="Images/Danté Graves CV.pdf" download class="btn-box">Download CV</a>
+                
+                <!----Information Tabs Container---->
+                <div id="tab-container" style="display: none;">
+
+                    <!----Information Tabs---->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Work history')">Work history</p>
+                    </div>
+
+                    <!----Skills---->
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Technical skills</span><br>Python Programming Language<br>JavaScript<br>HTML<br>CSS<br>Web development<br>
+                                SQL<br>Data management<br>Django<br>Git<br>Docker<br>Natural Language Processing<br>Bootstrap<br>Command line<br>
+                                Computer literacy<br>Digital arts competancy<br>UI/UX design<br>Figma</li>
+                            <li><span>Cognitive skills</span><br>Problem-solving skills<br>Creative thinkinker<br>Fast learner</li>
+                            <li><span>Communication skills</span><br>Fluent in Afrikaans<br>Fluent in English<br></li>
+                            <li><span>Personal development</span><br>Open to learning new skills<br>Fast learner<br>Open-minded<br>Curious</li>
+                            <li><span>Work approach</span><br>Strong work ethic<br>Task oriented<br>Adaptable<br>Organised</li>
+                            <li><span>Valid driver's license</span></li>
+                        </ul>
+                    </div>
+
+                    <!----Education---->
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Web Develoment course</span><br>The Odin Project<br>current</li>
+                            <li><span>Front-end Development course</span><br>Udemy<br>current</li>
+                            <li><span>Software Engineering bootcamp</span><br>HyperionDev<br>5/02/2024 - 17/07/2024
+                            <li><span>Web development with HTML</span><br>Alison academy<br>2024</li>
+                            <li><span>Styling with CSS</span><br>Alison academy<br>2024</li>
+                            <li><span>User Interface design with Figma</span><br>Alison academy<br>2024</li>
+                            <li><span>Graduated Highschool</span><br>Highschool Postmasburg<br>2015</li>
+                    </div>
+
+                    <!----Work history---->
+                    <div class="tab-contents" id="Work history">
+                        <ul>
+
+                            <li><span>Studying Web development and Software engineering</span><br>Current</li>
+                            <li><span>Freelance digital artist</span><br>2020-2023</li>
+                            <li><span>Receptionist and Data-capturer</span><br>Life clinic Kolomela Mine<br>
+                                Life clinic Assmang Mine<br>2018-2019<br>Duties included:<br>
+                                Database administration<br>Answering phone calls and emails<br>Scheduling medical appointments<br>
+                                Entering patient data into medical files<br>Filing medical data</li>
+                            <li><span>Assistant child-development instructor</span><br>MonkeyNastix<br>2017<br>Duties included:<br>
+                                Assisted in guiding children through developmental exercises and dance<br>Setup and removal of equipment<br>
+                                Driving to different school locations to teach</li>
+
+                        </ul>    
+                        
+                    </div>
+                   
+                </div>
+        </div>
+
+    </section>
+
+<!-------------Projects------------>
+
+<div id="projects">
+
+    <div class="container">
+        <h2>My <span>Projects</span></h2>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="Images/download (11).jpg">
+                <div class="layer">
+
+                    <h3>Online Shopping Website</h3>
+                    <p>Website example of an online jewellery store with login page created with HTML, and CSS</p>
+                    <a href="https://dantegraves.github.io/Harmony-jewels/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Images/download (10).jpg">
+                <div class="layer">
+
+                    <h3>Math Game</h3>
+                    <p>Multiplication math game created with HTML, CSS and JavaScript</p>
+                    <a href="https://dantegraves.github.io/Math-game/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Images/Photo by Michał Kubalczyk on Unsplash.jpg">
+                <div class="layer">
+                    
+                    <h3>Private Tutor Website</h3>
+                    <p>Website example of a private tutor website with login page created with HTML, and CSS</p>
+                    <a href="https://dantegraves.github.io/private-tutor/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+    
+<!-------------Contact me------------>
+
+<div class="contact" id="contact">
+    <div class="container">
+
+        <div class="contact-titles">
+            <h2>Contact <span>Me</span></h2>
+            <h2>Message <span>Me</span></h2>
+        </div>
+
+        <div class="row">
+
+            <div class="contact-left">
+                
+                <p><i class="fa-regular fa-envelope"></i><br>dantegraves247@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i><br>076 691 5353</p>
+
+            </div>
+
+            <!----Message form---->
+            <div class="contact-right">
+
+                <form method="get">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn-box">Send</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-------------Footer------------>
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2024 by Danté Graves. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!----Script---->
+
+</script>
+
+    <script src="main.js"></script>
+
+</body> 
+</html>
